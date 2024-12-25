@@ -14,17 +14,23 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
   name,
 }: TestimonialProps) => {
   return (
-    <section className="w-full h-full flex flex-col items-center pt-[200px]">
+    <article className="w-full h-full flex flex-col items-center pt-[200px]">
+      <h2 id="testimonial-title" className="sr-only hidden" aria-labelledby="testimonial-title">
+        User Testimonial
+      </h2>
       <div className="max-w-[340px] flex flex-col gap-4 bg-white p-6 rounded-lg shadow-md">
         <section className="flex w-full gap-4 ">
           {/* Avatar section */}
           <figure className="w-12 h-12">
             <Image
+              quality={65}
+              placeholder="blur"
+              priority={true}
               src={avatar}
               width={48}
               height={48}
               objectFit="cover"
-              alt={`${name}'s Avatar`}
+              alt={`Avatar of ${name}`}
             />
           </figure>
           {/* Name & Username section */}
@@ -39,10 +45,12 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
         </section>
         {/* testimonial section */}
         <blockquote>
-            <p className="font-normal text-base text-neutral-600">{testimonial}</p>
+          <p className="font-normal text-base text-neutral-600">
+            {testimonial}
+          </p>
         </blockquote>
       </div>
-    </section>
+    </article>
   );
 };
 
