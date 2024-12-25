@@ -2,7 +2,7 @@ import styles from '@/styles/TestimonialCard.module.css';
 
 export default function Credits() {
   return (
-    <div className={styles.credits}>
+    <footer className={styles.credits}>
       A challenge by:
       <a
         href="https://www.greatfrontend.com/projects?ref=challenges"
@@ -20,6 +20,6 @@ export default function Credits() {
         evadantir
       </a>
       .
-    </div>
+    </footer>
   );
 } 

@@ -10,16 +10,16 @@ export default function Home() {
   };
 
   return (
-    <div className="h-[768px] w-[1440px] flex flex-col items-center bg-gradient-to-b from-gray-50 to-[#d2d6db] py-[200px]">
-      <main className="w-[340px] flex flex-col gap-4 bg-white p-6 rounded-lg">
+    <div className="w-full h-full flex flex-col items-center bg-gradient-to-b from-gray-50 to-[#d2d6db] py-[200px] ">
+      <main className=" max-w-[340px] flex flex-col gap-4 bg-white p-6 rounded-lg">
         <div className="flex items-center gap-4 self-stretch">
           {/* Avatar section */}
-          <section className="w-12 h-12">
+          <section className="w-12 h-12 md:w-16 md:h-16">
             <Image
               src={data?.avatar}
               width={48}
               height={48}
-              className="w-12 h-12 object-cover"
+              className="w-full h-full object-cover"
               alt={`${data?.name}'s Avatar`}
             />
           </section>
@@ -38,9 +38,7 @@ export default function Home() {
           {data?.bio}
         </span>
       </main>
-      <footer>
-        <Credits />
-      </footer>
+      <Credits />
     </div>
   );
 }

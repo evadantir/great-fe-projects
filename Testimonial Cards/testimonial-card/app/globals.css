@@ -25,6 +25,11 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+.main-container {
+  background-color: white;
+  min-height: calc(100vh - 200px);
+}
+
 * {
   box-sizing: border-box;
 }
