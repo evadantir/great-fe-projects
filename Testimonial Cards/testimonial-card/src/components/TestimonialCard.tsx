@@ -3,22 +3,22 @@ import Image from "next/image";
 type TestimonialProps = {
   userName: string;
   avatar: string;
-  bio: string;
+  testimonial: string;
   name: string;
 };
 
 const TestimonialCard: React.FC<TestimonialProps> = ({
   userName,
   avatar,
-  bio,
+  testimonial,
   name,
 }: TestimonialProps) => {
   return (
-    <div className="w-full h-full flex flex-col items-center bg-gradient-to-b from-gray-50 to-[#d2d6db] py-[200px] ">
-      <main className="max-w-[340px] flex flex-col gap-4 bg-white p-6 rounded-lg shadow-md">
-        <div className="flex justify-center items-center gap-4 self-stretch">
+    <section className="w-full h-full flex flex-col items-center bg-gradient-to-b from-gray-50 to-[#d2d6db] pt-[200px]">
+      <div className="max-w-[340px] flex flex-col gap-4 bg-white p-6 rounded-lg shadow-md">
+        <section className="flex w-full justify-center items-center gap-4 ">
           {/* Avatar section */}
-          <figure className="w-12 h-12 md:w-16 md:h-16">
+          <figure className="w-12 h-12">
             <Image
               src={avatar}
               width={48}
@@ -28,7 +28,7 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
             />
           </figure>
           {/* Name & Username section */}
-          <section className="flex flex-col gap-px truncate text-pretty">
+          <section className="flex flex-col gap-px">
             <span className="font-semibold text-lg text-justify text-neutral-900 ">
               {name}
             </span>
@@ -36,11 +36,11 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
               {userName}
             </span>
           </section>
-        </div>
-        {/* Bio section */}
-        <p className="font-normal text-base text-neutral-600">{bio}</p>
-      </main>
-    </div>
+        </section>
+        {/* testimonial section */}
+        <p className="font-normal text-base text-neutral-600">{testimonial}</p>
+      </div>
+    </section>
   );
 };
 

@@ -4,7 +4,7 @@ export default function Home() {
   const data = {
     name: "Sarah Doleeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
     userName: "@sarahdole",
-    bio: "I've been searching for high-quality abstract images for my design projects, and I'm thrilled to have found this platform. The variety and depth of creativity are astounding!",
+    testimonial: "I've been searching for high-quality abstract images for my design projects, and I'm thrilled to have found this platform. The variety and depth of creativity are astounding!",
     avatar: "/img/profile-thumbnail.png",
   };
 
@@ -12,7 +12,7 @@ export default function Home() {
     <TestimonialCard 
       name={data.name}
       userName={data.userName}
-      bio={data.bio}
+      testimonial={data.testimonial}
       avatar={data.avatar}
     />
   );
