@@ -24,7 +24,6 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
           <figure className="w-12 h-12">
             <Image
               quality={65}
-              placeholder="blur"
               priority={true}
               src={avatar}
               width={48}
