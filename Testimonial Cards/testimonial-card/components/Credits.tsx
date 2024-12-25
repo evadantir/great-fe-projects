@@ -17,7 +17,7 @@ export default function Credits() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Your Name
+        evadantir
       </a>
       .
     </div>
