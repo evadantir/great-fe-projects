@@ -14,7 +14,7 @@ export default function Home() {
       <main className=" max-w-[340px] flex flex-col gap-4 bg-white p-6 rounded-lg">
         <div className="flex items-center gap-4 self-stretch">
           {/* Avatar section */}
-          <section className="w-12 h-12 md:w-16 md:h-16">
+          <figure className="w-12 h-12 md:w-16 md:h-16">
             <Image
               src={data?.avatar}
               width={48}
@@ -22,7 +22,7 @@ export default function Home() {
               className="w-full h-full object-cover"
               alt={`${data?.name}'s Avatar`}
             />
-          </section>
+          </figure>
           {/* Name & Username section */}
           <section className="flex flex-col gap-px grow">
             <span className="font-semibold text-lg text-justify text-neutral-900">
